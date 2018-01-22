@@ -25,5 +25,19 @@ var nav2 = $('ul li:nth-child(2)')
 var nav3 = $('ul li:nth-child(3)')
 
 nav1.on('click', function() {
-	nav1.css("background-color", "red");
+	nav1.addClass('active');
+	nav2.removeClass('active');
+	nav3.removeClass('active');
+});
+
+nav2.on('click', function() {
+	nav1.removeClass('active');
+	nav2.addClass('active');
+	nav3.removeClass('active');
+});
+
+nav3.on('click', function() {
+	nav1.removeClass('active');
+	nav2.removeClass('active');
+	nav3.addClass('active');
 });
