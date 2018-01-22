@@ -1,0 +1,25 @@
+li {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+li.active {
+    border: 1px solid;
+    cursor: default;
+}
+.article {
+    display: none;
+}
+#tab1 {
+    display: block;
+}
+
+.tab h2 {
+    cursor: pointer;
+}
+.tab p {
+    display: none;
+}
+.tab p.active {
+    display: block;
+}
