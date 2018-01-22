@@ -23,21 +23,33 @@ $('#tab1').on('click', function() {
 var nav1 = $('ul li:nth-child(1)')
 var nav2 = $('ul li:nth-child(2)')
 var nav3 = $('ul li:nth-child(3)')
+var ct1 = $('#tab1')
+var ct2 = $('#tab2')
+var ct3 = $('#tab3')
 
 nav1.on('click', function() {
 	nav1.addClass('active');
 	nav2.removeClass('active');
 	nav3.removeClass('active');
+	ct1.show();
+	ct2.hide();
+	ct3.hide();
 });
 
 nav2.on('click', function() {
 	nav1.removeClass('active');
 	nav2.addClass('active');
 	nav3.removeClass('active');
+	ct1.hide();
+	ct2.show();
+	ct3.hide();
 });
 
 nav3.on('click', function() {
 	nav1.removeClass('active');
 	nav2.removeClass('active');
 	nav3.addClass('active');
+	ct1.hide();
+	ct2.hide();
+	ct3.show();
 });
